@@ -1,0 +1,115 @@
+$color: white;
+
+@mixin block_structure
+{
+  margin:3% 0 0 3%;
+  width: 230px;
+  height: 240px;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: 30px 30px 36px #15151580 inset;
+}
+
+body
+{
+  margin: 0;
+}
+
+.page
+{
+  background-color: black;
+
+}
+
+.page_back
+{
+
+}
+
+.page_tittle-text
+{
+  padding: 3% 0 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.road
+{
+  color: $color;
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 143px;
+  text-align: left;
+
+}
+
+.tittle
+{
+ color: $color;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  width: 300px;
+  margin: 5% 0 0 10%;
+
+}
+
+.main_block
+{
+  height: 1100px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 51, 51, 0.5) 0%, rgba(255, 51, 51, 0) 100%);
+}
+
+
+.blocks
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block
+{
+ @include block_structure;
+}
+
+
+
+.tittle1
+{
+  color: $color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin: 10% 0 10% 10%;
+
+
+}
+
+.text
+{
+  color: $color;
+  width: 155px;
+  margin-left: 10%;
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px)
+
+{
+  .page
+  {
+    background-color: black;
+    height: 2500px;
+  }
+
+  .main_block
+  {
+    height: 2200px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 51, 51, 0.5) 0%, rgba(255, 51, 51, 0) 100%);
+  }
+}
